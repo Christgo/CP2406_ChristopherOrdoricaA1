@@ -1,17 +1,21 @@
+import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-//        user input - how long is a car
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("How long is a car");
 //        int carLength = scanner.nextInt();
         int carLength = 1;
-        int carPosition = 1;
         Car car = new Car(carLength);
-        Road road = new Road(carLength);
-        TrafficLight trafficLight = new TrafficLight();
+        Road road1 = new Road(5);
+        Road road2 = new Road(5);
+        Road[] roadArray = new Road[2];
+        roadArray[0] = road1;
+        roadArray[1] = road2;
     }
 }
+
  /*
  car uses positions
  car pos = 0;
@@ -21,4 +25,9 @@ public class Main {
  need a way to track what road a car is on
  road may or may not have traffic light
  road may or may not have a car
+  */
+
+ /* have array of road objects
+ boolean for whether or not car could move through
+ last in gets an alternating true/false
   */
