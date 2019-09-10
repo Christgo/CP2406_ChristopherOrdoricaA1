@@ -9,18 +9,23 @@ public class Main {
         int carLength = 1;
         TrafficLight trafficLight = new TrafficLight();
         Car car = new Car(carLength);
-        Road road1 = new Road(5);
-        Road road2 = new Road(5);
+        Road road1 = new Road(5, 0);
+        Road road2 = new Road(5, 1);
         Road[] roadArray = new Road[2];
         roadArray[0] = road1;
         roadArray[1] = road2;
 
         for (int i = -1; i < 5; i++) {
             car.carPosition = i;
-            System.out.println(car.carPosition);
-            if (car.carPosition == 4 && trafficLight.isGreen)
-                //make car go to other road
+            System.out.println("Road: " + car.carRoad + "| Road Position:" + car.carPosition);
+            trafficLight.changeLight();
+            if (car.carPosition == 4 && trafficLight.isGreen) {
+                car.carRoad++;
                 i = -1;
+            }
+            else
+                if (car.carPosition == 4)
+                    i = 3;
         }
 
 
