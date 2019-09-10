@@ -11,12 +11,12 @@ public class Main {
         Car car = new Car(carLength);
         Road road1 = new Road(5, 0);
         Road road2 = new Road(5, 1);
-        Road[] roadArray = new Road[2]; // need to link roads to carPosition
+        Road[] roadArray = new Road[2]; //TODO link roads to carPosition
         roadArray[0] = road1;
         roadArray[1] = road2;
 
         for (int i = -1; i < 5; i++) {
-            car.carPosition = i;
+            car.carPosition = i; //TODO fix car starting at -1
             System.out.println("Road: " + car.carRoad + "| Road Position:" + car.carPosition);
             trafficLight.changeLight();
             if (car.carPosition == 4 && trafficLight.isGreen) {
@@ -26,6 +26,8 @@ public class Main {
             else
                 if (car.carPosition == 4)
                     i = 3;
+            if (car.carRoad > 1)
+                break;
         }
 
 
