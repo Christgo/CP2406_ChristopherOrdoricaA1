@@ -2,7 +2,7 @@ public class Road {
     public int roadLength;
 
     public Road(int roadLength) {
-        this.roadLength = roadLength * 6; // to represent how a road is *6 length of bus
+        this.roadLength = roadLength;
     }
 
     public int getRoadLength() {
