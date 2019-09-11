@@ -8,6 +8,12 @@ public class TrafficLight {
         int num = random.nextInt(10);
         this.isGreen = num > 5;
     }
-}
 
-//randomly changed true/false value of particulat road segment?
+    public boolean isGreen() {
+        return isGreen;
+    }
+
+    public void setGreen(boolean green) { //method assists in testing
+        isGreen = green;
+    }
+}
