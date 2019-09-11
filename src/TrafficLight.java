@@ -9,7 +9,7 @@ public class TrafficLight {
         this.isGreen = num > 5;
     }
 
-    public boolean isGreen() {
+    public boolean getIsGreen() {
         return isGreen;
     }
 
