@@ -3,7 +3,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class RoadTest {
-    @Test void basicTest() {
+    @Test
+    void basicTest() {
         Road road = new Road(5, 0);
         assertEquals(5, road.roadLength);
         assertEquals(0, road.roadNumber);

@@ -29,7 +29,5 @@ public class Main {
             if (car.carRoad > 1)
                 break;
         }
-
-
     }
 }
