@@ -20,7 +20,7 @@ public class Main {
             System.out.println("Road: " + car.carRoad + "| Road Position:" + car.carPosition);
             trafficLight.changeLight();
             if (car.carPosition == 4 && trafficLight.isGreen) {
-                car.carRoad++;
+                car.carRoad++; //could be used to track array?
                 i = -1;
             }
             else
@@ -33,19 +33,3 @@ public class Main {
 
     }
 }
-
- /*
- car uses positions
- car pos = 0;
- road segment = 4 (5 segments - 0 -> 4)
- trafficLight @ road segment 5 (or 1)
- loop to move car (time not an issue, execute as fast as possible)
- need a way to track what road a car is on
- road may or may not have traffic light
- road may or may not have a car
-  */
-
- /* have array of road objects
- boolean for whether or not car could move through
- last in gets an alternating true/false
-  */
