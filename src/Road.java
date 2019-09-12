@@ -15,4 +15,12 @@ public class Road {
     public void setRoadLength(int roadLength) {
         this.roadLength = roadLength;
     }
+
+    public int getRoadNumber() {
+        return roadNumber;
+    }
+
+    public void setRoadNumber(int roadNumber) {
+        this.roadNumber = roadNumber;
+    }
 }
