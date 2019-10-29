@@ -18,6 +18,7 @@ public class JInterface extends JPanel implements ActionListener, ItemListener {
 
         JLabel middleLabel = new JLabel("label2");
         JPanel middlePanel = new JPanel();
+        middlePanel.setLayout(new GridLayout(3,3));
         middlePanel.setBackground(Color.GREEN);
         middlePanel.add(middleLabel);
 
