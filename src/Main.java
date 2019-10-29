@@ -1,9 +1,15 @@
+import javax.swing.*;
+import java.awt.*;
 import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        JInterface frame = new JInterface();
+        JFrame frame = new JFrame();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setContentPane(new JInterface());
+        frame.setSize(600, 600);
+        frame.setLayout(new GridLayout(3,1));
         frame.setVisible(true);
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.println("How long is a car");
