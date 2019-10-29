@@ -12,17 +12,17 @@ public class Main {
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.println("How long is a car");
 //        int vehicleLength = scanner.nextInt();
-        int vehicleLength = 1;
+        int vehicleLength = 2; //minimum of 2
         TrafficLight trafficLight = new TrafficLight();
         Car car = new Car(vehicleLength);
-        Road road1 = new Road(5, 0);
-        Road road2 = new Road(5, 1);
+        Road road1 = new Road(vehicleLength, 0);
+        Road road2 = new Road(vehicleLength, 1);
         Road[] roadArray = new Road[2]; //TODO link roads to carPosition
         roadArray[0] = road1;
         roadArray[1] = road2;
 
         for (int i = 0; i < 6; i++) {
-            car.position = i; //TODO fix car starting at -1
+            car.position = i;
             System.out.println("Road: " + car.road + "| Road Position:" + car.position);
             trafficLight.changeLight();
             if (car.position == 4 && trafficLight.isGreen) {
