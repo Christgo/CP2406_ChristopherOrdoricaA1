@@ -1,7 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.lang.reflect.Array;
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,17 +22,17 @@ public class Main {
         roadArray[1] = road2;
 
         for (int i = -1; i < 5; i++) {
-            car.carPosition = i; //TODO fix car starting at -1
-            System.out.println("Road: " + car.carRoad + "| Road Position:" + car.carPosition);
+            car.position = i; //TODO fix car starting at -1
+            System.out.println("Road: " + car.road + "| Road Position:" + car.position);
             trafficLight.changeLight();
-            if (car.carPosition == 4 && trafficLight.isGreen) {
-                car.carRoad++; //could be used to track array?
+            if (car.position == 4 && trafficLight.isGreen) {
+                car.road++; //could be used to track array?
                 i = -1;
             }
             else
-                if (car.carPosition == 4)
+                if (car.position == 4)
                     i = 3;
-            if (car.carRoad > 1)
+            if (car.road > 1)
                 break;
         }
     }
