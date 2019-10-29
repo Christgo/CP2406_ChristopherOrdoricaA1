@@ -1,4 +1,7 @@
 public abstract class Vehicle {
-    public Vehicle() {
+    int length;
+
+    public Vehicle(int vehicleLength) {
+        length = vehicleLength;
     }
 }
