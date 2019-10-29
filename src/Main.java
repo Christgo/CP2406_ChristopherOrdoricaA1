@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        JInterface frame = new JInterface();
+        frame.setVisible(true);
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.println("How long is a car");
 //        int carLength = scanner.nextInt();
