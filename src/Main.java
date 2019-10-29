@@ -11,10 +11,10 @@ public class Main {
         frame.setVisible(true);
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.println("How long is a car");
-//        int carLength = scanner.nextInt();
-        int carLength = 1;
+//        int vehicleLength = scanner.nextInt();
+        int vehicleLength = 1;
         TrafficLight trafficLight = new TrafficLight();
-        Car car = new Car(carLength);
+        Car car = new Car(vehicleLength);
         Road road1 = new Road(5, 0);
         Road road2 = new Road(5, 1);
         Road[] roadArray = new Road[2]; //TODO link roads to carPosition
