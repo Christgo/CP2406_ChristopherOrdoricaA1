@@ -21,7 +21,7 @@ public class Main {
         roadArray[0] = road1;
         roadArray[1] = road2;
 
-        for (int i = -1; i < 5; i++) {
+        for (int i = 0; i < 6; i++) {
             car.position = i; //TODO fix car starting at -1
             System.out.println("Road: " + car.road + "| Road Position:" + car.position);
             trafficLight.changeLight();
