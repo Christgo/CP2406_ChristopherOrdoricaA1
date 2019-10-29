@@ -4,4 +4,8 @@ public abstract class Vehicle {
     public Vehicle(int vehicleLength) {
         length = vehicleLength;
     }
+
+    public int getLength() {
+        return length;
+    }
 }
