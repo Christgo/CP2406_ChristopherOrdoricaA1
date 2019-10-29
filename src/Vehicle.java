@@ -5,8 +5,8 @@ public abstract class Vehicle {
 
     public Vehicle(int length) {
         this.length = length;
-        int position = 0;
-        int road = 0;
+        this.position = 0;
+        this.road = 0;
     }
 
     public int getLength() {
