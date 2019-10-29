@@ -4,7 +4,7 @@ public class Road {
 
 
     public Road(int roadLength, int roadNumber) {
-        this.roadLength = roadLength;
+        this.roadLength = roadLength * 3; // cannot be larger that vehicleLength * 5 or less than vehicleLength * 2
         this.roadNumber = roadNumber;
     }
 
@@ -13,7 +13,14 @@ public class Road {
     }
 
     public void setRoadLength(int roadLength) {
-        this.roadLength = roadLength;
+        if (roadLength > this.roadLength * 5) { //may not function as intended
+            this.roadLength *= 5;
+            System.out.println("road length cannot exceed bus length * 5");
+        } else if (roadLength < this.roadLength * 2) {
+            this.roadLength *= 2;
+            System.out.println("road length must be minimum of bus length * 2");
+        } else
+            this.roadLength = roadLength;
     }
 
     public int getRoadNumber() {
