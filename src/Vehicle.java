@@ -1,11 +1,35 @@
 public abstract class Vehicle {
-    int length;
+    public int length;
+    public int position;
+    public int road;
 
-    public Vehicle(int vehicleLength) {
-        length = vehicleLength;
+    public Vehicle(int length) {
+        this.length = length;
+        int position = 0;
+        int road = 0;
     }
 
     public int getLength() {
         return length;
+    }
+
+    public void setLength(int length) {
+        this.length = length;
+    }
+
+    public int getPosition() {
+        return position;
+    }
+
+    public void setPosition(int position) {
+        this.position = position;
+    }
+
+    public int getRoad() {
+        return road;
+    }
+
+    public void setRoad(int road) {
+        this.road = road;
     }
 }

@@ -1,7 +1,7 @@
 public class Bus extends Vehicle {
 
-    public Bus(int vehicleLength) {
-        super(vehicleLength);
+    public Bus(int length) {
+        super(length);
         this.length *= 3;
     }
 }

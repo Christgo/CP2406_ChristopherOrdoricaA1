@@ -1,7 +1,7 @@
 public class Motorbike extends Vehicle {
 
-    public Motorbike(int vehicleLength) {
-        super(vehicleLength);
+    public Motorbike(int length) {
+        super(length);
         this.length /= 2;
     }
 }
