@@ -1,6 +1,6 @@
 public class Road {
-    public int roadLength;
-    public int roadNumber;
+    int roadLength;
+    int roadNumber;
 
 
     public Road(int roadLength, int roadNumber) {
@@ -8,11 +8,11 @@ public class Road {
         this.roadNumber = roadNumber;
     }
 
-    public int getRoadLength() {
+    int getRoadLength() {
         return roadLength;
     }
 
-    public void setRoadLength(int roadLength) {
+    void setRoadLength(int roadLength) {
         if (roadLength > this.roadLength/2*5) {
             this.roadLength = this.roadLength/2*5;
             System.out.println("road length cannot exceed bus length * 5");
@@ -22,11 +22,11 @@ public class Road {
             this.roadLength = roadLength;
     }
 
-    public int getRoadNumber() {
+    int getRoadNumber() {
         return roadNumber;
     }
 
-    public void setRoadNumber(int roadNumber) {
+    void setRoadNumber(int roadNumber) {
         this.roadNumber = roadNumber;
     }
 }
