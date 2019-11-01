@@ -1,6 +1,5 @@
 /*
 Class will generate interface for traffic simulator
-
  */
 
 import javax.swing.*;

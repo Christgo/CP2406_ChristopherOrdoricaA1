@@ -17,7 +17,7 @@ public class Main {
         Car car = new Car(vehicleLength);
         Road road1 = new Road(vehicleLength, 0);
         Road road2 = new Road(vehicleLength, 1);
-        Road[] roadArray = new Road[2]; //TODO link roads to carPosition
+        Road[] roadArray = new Road[2];
         roadArray[0] = road1;
         roadArray[1] = road2;
 

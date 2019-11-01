@@ -13,7 +13,7 @@ public class Road {
     }
 
     public void setRoadLength(int roadLength) {
-        if (roadLength > this.roadLength/2*5) { //TODO: streamline so that it can use a different variable
+        if (roadLength > this.roadLength/2*5) {
             this.roadLength = this.roadLength/2*5;
             System.out.println("road length cannot exceed bus length * 5");
         } else if (roadLength < this.roadLength) {
