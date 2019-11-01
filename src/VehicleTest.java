@@ -14,6 +14,9 @@ class VehicleTest {
         car.setPosition(3);
         Assertions.assertEquals(2, car.road);
         Assertions.assertEquals(3, car.position);
+
+        car.setLength(4);
+        Assertions.assertEquals(4, car.getLength());
     }
 
     @Test
@@ -27,6 +30,9 @@ class VehicleTest {
         bus.setPosition(3);
         Assertions.assertEquals(2, bus.road);
         Assertions.assertEquals(3, bus.position);
+
+        bus.setLength(16);
+        Assertions.assertEquals(16, bus.getLength());
     }
 
     @Test
@@ -36,9 +42,12 @@ class VehicleTest {
         Assertions.assertEquals(0, mBike.getRoad());
         Assertions.assertEquals(0, mBike.getPosition());
 
-        mBike.setRoad(2);
-        mBike.setPosition(3);
-        Assertions.assertEquals(2, mBike.road);
-        Assertions.assertEquals(3, mBike.position);
+        mBike.setRoad(3);
+        mBike.setPosition(2);
+        Assertions.assertEquals(3, mBike.road);
+        Assertions.assertEquals(2, mBike.position);
+
+        mBike.setLength(2);
+        Assertions.assertEquals(2, mBike.getLength());
     }
 }
