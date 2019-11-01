@@ -15,7 +15,7 @@ public class Main {
         int vehicleLength = 2; //minimum of 2
         TrafficLight trafficLight = new TrafficLight();
         Car car = new Car(vehicleLength);
-        Road road1 = new Road(vehicleLength, 0);
+//        Road road1 = new Road(vehicleLength, 0);
 //        Road road2 = new Road(vehicleLength, 1);
 //        Road[] roadArray = new Road[2];
 //        roadArray[0] = road1;
