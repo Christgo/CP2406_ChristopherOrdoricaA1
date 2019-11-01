@@ -9,12 +9,19 @@ import java.awt.event.*;
 
 public class JInterface extends JPanel implements ActionListener, ItemListener {
 
-    public JInterface() {
+    JInterface() {
         super();
+
         JLabel topLabel = new JLabel("label1");
+        String[] vehicleLengths = {"2","4","6","8"};
+        JComboBox<String> vehicleLength = new JComboBox<>(vehicleLengths);
         JPanel topPanel = new JPanel();
         topPanel.setBackground(Color.BLACK);
         topPanel.add(topLabel);
+
+        vehicleLength.setSelectedIndex(0);
+        vehicleLength.addActionListener(this);
+        topPanel.add(vehicleLength);
 
         JLabel middleLabel = new JLabel("label2");
         JPanel middlePanel = new JPanel();
@@ -38,11 +45,9 @@ public class JInterface extends JPanel implements ActionListener, ItemListener {
 
     @Override
     public void itemStateChanged(ItemEvent event) {
-
     }
 
     @Override
     public void actionPerformed(ActionEvent event) {
-
     }
 }
