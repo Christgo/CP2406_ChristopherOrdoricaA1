@@ -16,10 +16,10 @@ public class Main {
         TrafficLight trafficLight = new TrafficLight();
         Car car = new Car(vehicleLength);
         Road road1 = new Road(vehicleLength, 0);
-        Road road2 = new Road(vehicleLength, 1);
-        Road[] roadArray = new Road[2];
-        roadArray[0] = road1;
-        roadArray[1] = road2;
+//        Road road2 = new Road(vehicleLength, 1);
+//        Road[] roadArray = new Road[2];
+//        roadArray[0] = road1;
+//        roadArray[1] = road2;
 
         for (int i = 0; i < 6; i++) {
             car.position = i;
